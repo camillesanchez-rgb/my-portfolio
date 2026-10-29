@@ -1,0 +1,411 @@
+
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e6cfd5;
+    color: #80483f;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+/* NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 35px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #800040;
+    font-size: 23px;
+}
+
+nav a:hover {
+    color: #e83e80;
+}
+
+
+/* HOME SECTION */
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+    padding: 60px 10%;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    font-style: italic;
+    color: #a95f5d;
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.home-image img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* BUTTON */
+.button {
+    display: inline-block;
+
+    background-color: #e83280;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 14px 25px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #a83268;
+}
+
+
+/* GENERAL SECTIONS */
+section {
+    padding: 100px 10%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    font-size: 55px;
+    font-style: italic;
+    color: #a95f5d;
+    margin-bottom: 50px;
+}
+
+
+/* ABOUT SECTION */
+.about p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+
+
+.about blockquote {
+    margin-top: 60px;
+    text-align: right;
+
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* SKILLS SECTION */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border: 1px solid #b87983;
+    border-radius: 12px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin-bottom: 25px;
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+
+/* EXPERIENCE SECTION */
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.experience-card {
+    flex: 1;
+    min-width: 250px;
+
+    padding: 30px;
+
+    border: 1px solid #b87983;
+    border-radius: 12px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.experience-card h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.experience-card h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #a95f5d;
+}
+
+.experience-card p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.sykes-photos {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sykes-photos img {
+    display: block;
+    width: 50%;
+    height: 220px;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+```css
+/* MY PROJECTS SECTION */
+.projects-section {
+    padding: 60px 8%;
+    background-color: #fdf6f8;
+    color: #80483f;
+    text-align: center;
+}
+
+.projects-section h1 {
+    color: #a95f5d;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.projects-intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #e6cfd5;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(128, 0, 64, 0.08);
+}
+
+.project-card h2 {
+    color: #a95f5d;
+    font-size: 21px;
+}
+
+.project-card p {
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.website-photo {
+    width: 70%;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 15px auto;
+}
+
+.project-link {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+    background-color: #a95f5d;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    background-color: #800040;
+    transform: scale(1.05);
+}
+
+/* CONTACT SECTION */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    margin: 40px 0;
+}
+
+.contact-info a {
+    color: #800040;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+
+    background-color: #d9bfc7;
+    font-size: 15px;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-image img {
+        width: 250px;
+        height: 300px;
+    }
+
+    section {
+        padding: 70px 8%;
+    }
+
+    section h2 {
+        font-size: 40px;
+    }
+
+    .about blockquote {
+        font-size: 18px;
+    }
+
+}
